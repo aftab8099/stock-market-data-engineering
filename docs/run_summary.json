@@ -1,0 +1,46 @@
+{
+  "source": "Controlled test dataset (sample_stock_data.csv) \u2014 not a live API feed",
+  "symbols": [
+    "AAPL",
+    "MSFT"
+  ],
+  "date_range": "2026-09-01 to 2026-10-12",
+  "retrieved": 68,
+  "valid": 62,
+  "rejected": 6,
+  "rejected_by_rule": {
+    "DQ-03": 2,
+    "DQ-04": 1,
+    "DQ-05": 1,
+    "DQ-01": 1,
+    "DQ-02": 1
+  },
+  "duplicates": 2,
+  "inserted": 60,
+  "updated_first_load": 0,
+  "updated_on_rerun": 60,
+  "total_in_table": 60,
+  "by_symbol": [
+    {
+      "symbol": "AAPL",
+      "total_records": 30,
+      "first_trading_date": "2026-09-01",
+      "latest_trading_date": "2026-10-12"
+    },
+    {
+      "symbol": "MSFT",
+      "total_records": 30,
+      "first_trading_date": "2026-09-01",
+      "latest_trading_date": "2026-10-12"
+    }
+  ],
+  "timings_seconds": {
+    "extraction": 0.00635,
+    "transformation": 0.014315,
+    "validation": 0.003807,
+    "loading": 0.10571,
+    "total": 0.13022
+  },
+  "throughput_records_per_second": 522.2,
+  "status": "Completed (test run)"
+}
